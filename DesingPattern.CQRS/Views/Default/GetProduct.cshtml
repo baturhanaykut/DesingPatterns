@@ -1,0 +1,28 @@
+﻿@using DesingPattern.CQRS.CQRSPattern.Results
+@model GetProductByIDQueryResult
+@{
+    Layout = null;
+}
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+<div class="container">
+    <form method="get">
+        <br />
+        <label>Ürün Id</label>
+        <input type="text" class="form-control" asp-for="ProductID" />
+        <br />
+        <label>Ürün Adı</label>
+        <input type="text" class="form-control" asp-for="Name" />
+        <br />
+        <label>Ürün Fiyatı</label>
+        <input type="text" class="form-control" asp-for="Price" />
+        <br />
+        <label>Ürün Stok Miktarı</label>
+        <input type="text" class="form-control" asp-for="Stock" />
+        <br />
+    </form>
+
+</div>
+
+
